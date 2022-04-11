@@ -1,11 +1,52 @@
 body {
-  max-width: 1280px;
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
 }
 
 .nav {
+  width: 100%;
+  height: 8rem;
+  margin: auto;
   background: rgb(36, 27, 24);
+  display: flex;
+  position: relative;
+}
+.nav .log {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu ul li {
+  color: red;
 }
 
 .mr-8:hover {
   color: rgb(230, 93, 13);
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .nav {
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    background: rgb(36, 27, 24);
+    display: flex;
+  }
+
+  .log-pic {
+    margin: 2.5rem 0;
+    margin-left: 9rem;
+  }
+
+  .mr-8:hover {
+    color: rgb(230, 93, 13);
+  }
 }/*# sourceMappingURL=t4.css.map */
