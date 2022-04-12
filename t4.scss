@@ -37,12 +37,20 @@ body{
         transform: translateY(8rem);
         font-size: 1.5rem;
         padding-left: 0.5rem;
+        transform: translateX(-100%);
         li{
             color: red;
             line-height: 4rem;
             //transform: translateY(30%);
         }
     }
+}
+#side-menu:checked + .menu .sidemenu  {
+    transform: translateX(0)
+}
+#side-menu{
+    position: absolute;
+    opacity: 0;
 }
 
 .mr-8:hover{
