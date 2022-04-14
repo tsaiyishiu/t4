@@ -31,19 +31,27 @@ body{
 .menu{
     
     ul{
-        background: blue;
+        background:rgb(36, 27, 24);
         width: 100%;
         height: 100vh;
-        transform: translateY(8rem);
+        z-index: -1;
+        transition: 1s;
         font-size: 1.5rem;
         padding-left: 0.5rem;
         transform: translateX(-100%);
-        li{
-            color: red;
+
+        
+        .mr-8{
+            color: saddlebrown;
             line-height: 4rem;
+            transform: translateY(8rem);
             //transform: translateY(30%);
+
         }
     }
+}
+.mr-8:hover{
+    color: red;
 }
 #side-menu:checked + .menu .sidemenu  {
     transform: translateX(0)
@@ -53,9 +61,7 @@ body{
     opacity: 0;
 }
 
-.mr-8:hover{
-    color:rgb(230, 93, 13);
-}
+
 @media(min-width:768px){
     body{
         max-width: 1024px;
@@ -69,19 +75,56 @@ body{
         margin: auto;
         background: rgb(36, 27, 24);
         display: flex;
+        position: relative;
+        label{
+            font-size: 2rem;
+            background: red;
+            margin-left: 1rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 10px;
     }
-    .log-pic{
-        margin: 2.5rem 0;
-        margin-left: 9rem;
-    
+        .log{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 3rem 3rem 3rem 4rem;
+            
+        }
     }
-        
-        
+    .menu{
+        label{
+            z-index: -1;
+        }
+        ul{
+            background:rgb(36, 27, 24);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: 1s;
+            font-size: 1.5rem;
+            padding-left: 0.5rem;
+            transform: translateX(0);
     
+            
+            .mr-8{
+                color: saddlebrown;
+                line-height: 4rem;
+                transform: translateY(8rem);
+                //transform: translateY(30%);
     
-     
-
+            }
+        }
+    }
     .mr-8:hover{
-        color:rgb(230, 93, 13);
+        color: red;
     }
-}
+    #side-menu:checked + .menu .sidemenu  {
+        transform: translateX(0)
+    }
+    #side-menu{
+        position: absolute;
+        opacity: 0;
+    }
+ }    
