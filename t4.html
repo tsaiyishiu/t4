@@ -9,32 +9,44 @@
     <script src="https://kit.fontawesome.com/99bab8b98c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./t4.css">
 </head>
-<body class="m-auto">
-    
-    <div class="header">
-        <div class="nav container h-32  flex-col md:flex-row ">
-            
-            <div class="log">
+<body>
+    <div class="wrappr">
+        <div class="header">
+            <div class="nav container:2xl h-32  flex-col md:flex-row ">
                 
-                <img class="log-pic" src="./t4pic/logo.png" alt="">
+                <div class="log">
+                    
+                    <img class="log-pic" src="./t4pic/logo.png" alt="">
+                </div>
+                <input type="checkbox" name="" id="side-menu">    
+                <div class="menu flex md:items-center md:ml-28">
+                    
+                    <ul class="sidemenu md:flex md:flex-row flex-col  text-gray-50">
+                        <li class="mr-8 "><a href="#">home</a></li>
+                        <li class="mr-8"><a href="#">about</a></li>
+                        <li class="mr-8"><a href="#">gallery</a></li>
+                        <li class="mr-8"><a href="#">blog</a></li>
+                        <li class="mr-8"><a href="#">contact</a></li>
+                    </ul>
+                    <label for="side-menu">
+                        <i class="fa-solid fa-bars "></i>
+                    </label>
+                </div>
             </div>
-            <input type="checkbox" name="" id="side-menu">    
-            <div class="menu flex md:items-center md:ml-28">
-                
-                <ul class="sidemenu md:flex md:flex-row flex-col  text-gray-50">
-                    <li class="mr-8 "><a href="#">home</a></li>
-                    <li class="mr-8"><a href="#">about</a></li>
-                    <li class="mr-8"><a href="#">gallery</a></li>
-                    <li class="mr-8"><a href="#">blog</a></li>
-                    <li class="mr-8"><a href="#">contact</a></li>
-                </ul>
-                <label for="side-menu">
-                    <i class="fa-solid fa-bars "></i>
-                </label>
+        </div>    
+        <div class="main">
+            <div class="content grid grid-cols-2">
+                <div class="content-pic">
+                    <img src="./t4pic/chair.jpg" alt="">
+                </div>
+                <div class="content-txt">
+                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rem ad molestiae officiis itaque adipisci facere nobis iure doloribus veritatis vel consequatur quasi fuga autem architecto delectus quos debitis consectetur magnam, exercitationem consequuntur ullam aut.</p>
+
+                </div>
             </div>
         </div>
-    </div>    
-    <div class="main"></div>
-    <div class="footer"></div>
+        <div class="footer"></div>
+</div>
 </body>
 </html>

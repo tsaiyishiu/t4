@@ -1,73 +1,20 @@
-body {
-  max-width: 1024px;
-  width: 100%;
-  margin: auto;
-}
-
-.nav {
-  width: 100%;
-  height: 8rem;
-  margin: auto;
-  background: rgb(36, 27, 24);
-  display: flex;
-  position: relative;
-}
-.nav label {
-  font-size: 2rem;
-  background: red;
-  margin-left: 1rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 10px;
-}
-.nav .log {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 3rem 3rem 3rem 4rem;
-}
-
-.menu ul {
-  background: rgb(36, 27, 24);
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  transition: 1s;
-  font-size: 1.5rem;
-  padding-left: 0.5rem;
-  transform: translateX(-100%);
-}
-.menu ul .mr-8 {
-  color: saddlebrown;
-  line-height: 4rem;
-  transform: translateY(8rem);
-}
-
-.mr-8:hover {
-  color: red;
-}
-
-#side-menu:checked + .menu .sidemenu {
-  transform: translateX(0);
-}
-
-#side-menu {
-  position: absolute;
-  opacity: 0;
-}
-
 @media (min-width: 768px) {
-  body {
-    max-width: 1024px;
+  .wrappr {
+    max-width: 1440px;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
   }
 
   .nav {
     width: 100%;
     height: 8rem;
     margin: auto;
+    padding: 0 12rem;
     background: rgb(36, 27, 24);
     display: flex;
     position: relative;
@@ -85,7 +32,13 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding: 3rem 3rem 3rem 4rem;
+    padding: 0;
+    flex-grow: 1;
+  }
+  .nav .log .log-pic {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .menu label {
@@ -97,17 +50,17 @@ body {
     height: 100%;
     z-index: 0;
     transition: 1s;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 0.5rem;
     transform: translateX(0);
   }
   .menu ul .mr-8 {
-    color: saddlebrown;
     line-height: 4rem;
     transform: translateY(2rem);
+    flex-grow: 1;
   }
 
-  .mr-8:hover {
+  a:hover {
     color: red;
   }
 
@@ -118,5 +71,32 @@ body {
   #side-menu {
     position: absolute;
     opacity: 0;
+  }
+
+  .main {
+    background-image: url(./t4pic/bg-body.png);
+  }
+  .main .content {
+    padding: 0 12rem;
+  }
+  .main .content .content-txt {
+    background-image: url(./t4pic/bg-pattern.jpg);
+    background-repeat: round;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .content .content-txt h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .main .content .content-txt p {
+    word-spacing: 0.5rem;
+    padding: 2rem;
+  }
+  .main .content .content-pic img {
+    width: 100vw;
   }
 }/*# sourceMappingURL=t4.css.map */
