@@ -82,14 +82,20 @@
   }
   .main .content-products .item div {
     background-color: rgb(134, 100, 66);
-    padding: 1rem 1rem 2rem 1rem;
+  }
+  .main .content-products .item div div {
+    background-image: url(./t4pic/separator-light.png);
+    background-size: contain;
+    height: 0.5rem;
   }
   .main .content-products .item div h2 {
     font-size: 2rem;
     color: rgb(251, 149, 6);
+    padding-left: 1rem;
   }
   .main .content-products .item div p {
     color: white;
+    padding: 0 1rem 2rem 1rem;
   }
   .main .content-products .item img {
     width: 100vw;
@@ -113,6 +119,25 @@
   .main .content .content-txt p {
     word-spacing: 0.5rem;
     padding: 2rem;
+  }
+  .main .content .content-pic {
+    position: relative;
+  }
+  .main .content .content-pic div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    margin: 0 2rem 2rem 0;
+  }
+  .main .content .content-pic div h3 {
+    margin: -0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .main .content .content-pic div p {
+    font-size: 2rem;
+    text-align: center;
   }
   .main .content .content-pic img {
     width: 100vw;

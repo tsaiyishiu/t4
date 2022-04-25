@@ -150,20 +150,32 @@
         opacity: 0;
     }
     .main{
+        
         background-image: url(./t4pic/bg-body.png);
         .content-products{
+            
+            
             padding: 0 12rem;
             .item{
                 div{
                     background-color: rgb(134, 100, 66);
-                    padding: 1rem 1rem 2rem 1rem;
+                    //padding: 1rem 1rem 2rem 1rem;
+                    div{
+                        background-image: url(./t4pic/separator-light.png);
+                        background-size: contain;
+                        
+                        height: 0.5rem;
+                    }
                     h2{
                         font-size: 2rem;
                         color: rgb(251, 149, 6);
+                        padding-left: 1rem;
                     }
                     p{
                         color: white;
+                        padding: 0 1rem 2rem 1rem;;
                     }
+                    
                 }
                 img{
                     width: 100vw;
@@ -191,8 +203,26 @@
                 }
             }
             .content-pic{
+                position: relative;
+                div{
+                    position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 30%;
+                        margin: 0 2rem 2rem 0;
+                    h3{
+                        margin: -0.5rem;
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 2rem;
+                        text-align: center
+                    }
+                }
                 img{
                     width: 100vw;
+                    
                 }
             }
         }
