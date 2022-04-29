@@ -150,6 +150,24 @@
         opacity: 0;
     }
     .main{
+        .Reservation{
+            .Reservation-item{
+                height: 20rem;
+                background-color:rgb(233, 230, 225);
+                margin: 0 12rem;
+                .Reservation-item-number{
+                    padding: 2rem;
+                    div{
+                        padding-bottom: 2rem;
+                        p{
+                            font-size: 2rem;
+                            word-spacing: 1rem;
+                            line-height: 2rem;
+                        }
+                    }
+                }
+            }
+        }
         
         background-image: url(./t4pic/bg-body.png);
         .content-products{
