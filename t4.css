@@ -79,7 +79,7 @@
   }
   .main .Reservation .Reservation-item {
     height: 20rem;
-    background-color: rgb(233, 230, 225);
+    background-color: rgb(255, 255, 255);
     margin: 0 12rem;
   }
   .main .Reservation .Reservation-item .Reservation-item-number {
@@ -92,6 +92,17 @@
     font-size: 2rem;
     word-spacing: 1rem;
     line-height: 2rem;
+  }
+  .main .Reservation .Reservation-item .for-the-blog div .read-more {
+    width: 100vw;
+    padding: 1.5rem;
+    padding-top: 5rem;
+  }
+  .main .Reservation .Reservation-item .for-the-blog div .read-more .read-more-item {
+    background-color: rgb(221, 218, 211);
+  }
+  .main .Reservation .Reservation-item .for-the-blog div .read-more img {
+    width: 100%;
   }
   .main .content-products {
     padding: 0 12rem;

@@ -153,7 +153,7 @@
         .Reservation{
             .Reservation-item{
                 height: 20rem;
-                background-color:rgb(233, 230, 225);
+                background-color:rgb(255, 255, 255);
                 margin: 0 12rem;
                 .Reservation-item-number{
                     padding: 2rem;
@@ -163,6 +163,25 @@
                             font-size: 2rem;
                             word-spacing: 1rem;
                             line-height: 2rem;
+                        }
+                    }
+                }
+                .for-the-blog{
+                    
+                    div{
+                        
+                        
+                        .read-more{
+                            width: 100vw;
+                            padding: 1.5rem;
+                            padding-top: 5rem;
+                            .read-more-item{
+                                background-color: rgb(221, 218, 211);        
+                            }
+                            //display: flex;
+                            img{
+                                width: 100%;
+                            }
                         }
                     }
                 }
